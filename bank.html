@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="text-center mt-[30px]">
+        <h1 class="text-[50px]">
+        Lets get some <span class="text-purple-600">Money</span>!!!</h1>
+      </header>
+    <main>
+    <section class="mt-[100px]">
+        <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto text-white">
+            <div class="bg-green-400 p-8 rounded-xl">
+                <h3 class="text-2xl">Deposit</h3>
+             <h2 class="text-5xl">$<span id="deposit-amount">00</span></h2> 
+            </div>
+            <div class="bg-yellow-500 p-8 rounded-xl">
+                <h3 class="text-2xl">Withdraw</h3>
+             <h2 class="text-5xl">$<span id="withdraw-amount">00</span></h2> 
+            </div>
+            <div class="bg-purple-400 p-8 rounded-xl">
+                <h3 class="text-2xl">Balance</h3>
+             <h2 class="text-5xl">$<span id="balance-amount">1240</span></h2> 
+            </div>
+        </div>
+    </section>
+
+<section class="mt-[100px]">
+    <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto">
+        <div class="bg-purple-500 p-8 rounded-xl">
+            <h3 class="text-2xl mb-[10px] text-white">Please Deposit</h3>
+            <input class="w-[400px] mb-[10px] px-3" type="text" name="" id="deposit-input" placeholder="$Amount you want to deposit"><br>
+            <button id="deposit-btn" class="bg-amber-400 my-[10px] px-6 py-3 hover:bg-sky-700 rounded-[10px] text-white  text-[20px] font-bold">Deposit</button>
+        </div>
+        <div class="bg-sky-500 p-8 rounded-xl">
+            <h3 class="text-2xl mb-[10px] text-white">Please Withdraw</h3>
+            <input class="w-[400px] mb-[10px] px-3" type="text" name="" id="withdraw-input" placeholder="$Amount you want to Withdraw"><br>
+            <button id="withdraw-btn" class="bg-amber-400 my-[10px] px-6 py-3 hover:bg-sky-700 rounded-[10px] text-white  text-[20px] font-bold">Deposit</button>
+        </div>
+       
+        
+    </div>
+</section>
+
+    </main>
+
+    <script src="js/bank.js"></script>
+    <script src="js/withdraw.js"></script>
+</body>
+</html>
